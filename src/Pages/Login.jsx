@@ -6,7 +6,7 @@ const Login = () => {
   const navigate = useNavigate()
   const [userData, setUserData] = useState({
     email: "",
-    password: "", // ✅ fixed spelling
+    password: "",
   });
 
   const handleChange = (e) => {
@@ -20,7 +20,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/v1/auth/login", userData);
+      const res = await axios.post("https://mdi-backend-wxoa.onrender.com/api/v1/auth/login", userData);
       const user = res.data.user;
       localStorage.setItem("user",JSON.stringify(user))
       navigate('/home')
