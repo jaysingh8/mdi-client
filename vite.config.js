@@ -8,7 +8,7 @@ export default defineConfig({
   ],
   server: {
     proxy: {
-      '/api': 'https://jolly-quokka-ce122c.netlify.app/',
+      '/api': 'https://mdi-backend-wxoa.onrender.com',
     },
   },
 })
