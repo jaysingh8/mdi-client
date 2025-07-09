@@ -6,4 +6,9 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss()
   ],
+  server: {
+    proxy: {
+      '/api': 'https://jolly-quokka-ce122c.netlify.app/',
+    },
+  },
 })
