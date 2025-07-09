@@ -20,7 +20,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://mdi-backend-wxoa.onrender.com/api/v1/auth/login", userData);
+      const res = await axios.post("/api/v1/auth/login", userData);
       const user = res.data.user;
       localStorage.setItem("user",JSON.stringify(user))
       navigate('/home')
