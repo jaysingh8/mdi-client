@@ -76,7 +76,7 @@ const SingleProduct = () => {
         userId: user._id,
       }
 
-      const res = await axios.post('http://localhost:5000/api/v1/reviews', newReview, {
+      const res = await axios.post('https://mdi-backend-wxoa.onrender.com/api/v1/reviews', newReview, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
