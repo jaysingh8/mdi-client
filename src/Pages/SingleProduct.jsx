@@ -35,7 +35,7 @@ const SingleProduct = () => {
       setLoading(true)
       setError(null)
       try {
-        const res = await axios.get(`http://localhost:5000/api/v1/reviews?productId=${id}`)
+        const res = await axios.get(`https://mdi-backend-wxoa.onrender.com/api/v1/api/v1/reviews?productId=${id}`)
         setReviews(res.data.reviews)
       } catch (err) {
         setError('Failed to load reviews.')

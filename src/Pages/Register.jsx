@@ -22,7 +22,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("https://mdi-backend-wxoa.onrender.com/~api/v1/auth/signup", formData);
+            const res = await axios.post("https://mdi-backend-wxoa.onrender.com/api/v1/auth/signup", formData);
             alert(res.data.message);
             navigate('/')
         } catch (error) {
