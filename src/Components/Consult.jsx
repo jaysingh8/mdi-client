@@ -28,9 +28,9 @@ const Consult = () => {
                 <p className='text-gray-700 font-serif text-center'>
                     Talk to doctors online from your mobile. Fast, easy and secure medical advice from home.
                 </p>
-                <button className='px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600'>
+                <Link to="/doctor" className='px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600'>
                     Start Now
-                </button>
+                </Link>
             </div>
         )
     );
