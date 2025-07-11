@@ -1,5 +1,6 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-router-dom';
 
 const Consult = () => {
     const isDesktop = useMediaQuery({ query: '(min-width: 1010px)' });
@@ -16,9 +17,9 @@ const Consult = () => {
                         anywhere.
                     </p>
                 </div>
-                <button className='px-4 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600'>
+                <Link to="/doctor" className='px-4 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600'>
                     Consult Now
-                </button>
+                </Link>
             </div>
         ) : (
             // Mobile View
